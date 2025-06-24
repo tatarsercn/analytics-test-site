@@ -62,19 +62,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img src="https://via.placeholder.com/200" alt="Ürün 1">
     <h3>Ürün 1</h3>
     <p>100₺</p>
-    <button onclick="addToCart('Ürün 1', 100)">Sepete Ekle</button>
+    <button onclick="addToCart('Ürün 1', 100); 
+  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 1', price: 100 });">
+  Sepete Ekle
+</button>
   </div>
   <div class="product">
     <img src="https://via.placeholder.com/200" alt="Ürün 2">
     <h3>Ürün 2</h3>
     <p>150₺</p>
-    <button onclick="addToCart('Ürün 2', 150)">Sepete Ekle</button>
+   <button onclick="addToCart('Ürün 2', 150); 
+  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 2', price: 150 });">
+  Sepete Ekle
+</button>
   </div>
   <div class="product">
     <img src="https://via.placeholder.com/200" alt="Ürün 3">
     <h3>Ürün 3</h3>
     <p>200₺</p>
-    <button onclick="addToCart('Ürün 3', 200)">Sepete Ekle</button>
+    <button onclick="addToCart('Ürün 3', 200); 
+  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 3', price: 200 });">
+  Sepete Ekle
+</button>
   </div>
 </div>
 
