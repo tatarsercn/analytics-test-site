@@ -131,8 +131,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   function checkout() {
-    window.location.href = 'checkout.html';
-  }
+  dataLayer.push({
+    event: 'purchase',
+    ecommerce: {
+      items: cart.map(item => ({
+        item_name: item.name,
+        price: item.price,
+        quantity: 1
+      }))
+    }
+  });
 </script>
 
 </body>
