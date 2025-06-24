@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>Ödeme Sayfası</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; background: #f8f8f8; }
+  h1 { text-align: center; }
+  form { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: 0 auto; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+  label { display: block; margin: 10px 0 5px; font-weight: bold; }
+  input, select, textarea { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+  button { background: #333; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-top: 15px; width: 100%; }
+  button:hover { background: #555; }
+</style>
+</head>
+<body>
+
+<h1>Ödeme Bilgileri</h1>
+
+<form action="thankyou.html" method="get">
+  <label>İsim Soyisim</label>
+  <input type="text" name="name" required />
+
+  <label>Adres</label>
+  <textarea name="address" rows="3" required></textarea>
+
+  <label>Telefon</label>
+  <input type="tel" name="phone" required />
+
+  <label>Ödeme Türü</label>
+  <select name="payment" required>
+    <option value="creditcard">Kredi Kartı</option>
+    <option value="cash">Kapıda Ödeme</option>
+  </select>
+
+  <button type="submit">Siparişi Tamamla</button>
+</form>
+
+</body>
+</html>
