@@ -63,7 +63,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img src="https://via.placeholder.com/200" alt="Ürün 1">
     <h3>Ürün 1</h3>
     <p>100₺</p>
-    <button onclick="addToCart('Ürün 1', 100); dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 1', price: 100 });">Sepete Ekle</button>
+    <button onclick="addToCart('Ürün 1', 100)">Sepete Ekle</button>
   </div>
   <div class="product">
     <img src="https://via.placeholder.com/200" alt="Ürün 2">
+    <h3>Ürün 2</h3>
+    <p>150₺</p>
+    <button onclick="addToCart('Ürün 2', 150)">Sepete Ekle</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Ürün 3">
+    <h3>Ürün 3</h3>
+    <p>200₺</p>
+    <button onclick="addToCart('Ürün 3', 200)">Sepete Ekle</button>
+  </div>
+</div>
+<!-- Sepet paneli -->
+<div class="cart-panel" id="cartPanel">
+  <span class="close-cart" onclick="toggleCart()">✕</span>
+  <h2>Sepetim</h2>
+  <div id="cartItems"></div>
+  <hr />
+  <button onclick="checkout()">Satın Al</button>
+</div>
+
+<script>
+  let cart = [];
+  const cartCountElement = document.querySelector('.cart-count');
+  const cartItemsElement = document.getElementById('cartItems');
+
+  function addToCart(name, price) {
+    cart.push({ name, price });
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    cartCountElement.textContent = cart.length;
+    cartItemsElement.innerHTML = '';
+    cart.forEach((item, index) => {
+      const div = document.createElement('div');
+      div.className = 'cart-item';
+      div.innerHTML = `
+        <h4>${item.name}</h4>
+        <p>Fiyat: ${item.price}₺</p>
+        <button onclick="removeFromCart(${index})">Sil</button>
+      `;
+      cartItemsElement.appendChild(div);
+    });
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+  }
+
+  function toggleCart() {
+    document.getElementById('cartPanel').classList.toggle('open');
+  }
+
+  function checkout() {
+    window.location.href = 'checkout.html';
+  }
+</script>
+
+</body>
+</html>
