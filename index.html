@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5PCZRCX4');</script>
-<!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17033790319"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5PCZRCX4');</script>
+  <!-- End GTM -->
 
-  gtag('config', 'AW-17033790319');
-</script>
-<meta charset="UTF-8" />
-<title>Mini Mağaza</title>
-<style>
-  body { font-family: Arial, sans-serif; padding: 20px; background: #f8f8f8; }
-  header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #333; color: #fff; border-radius: 8px; margin-bottom: 20px; }
-  .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
-  .nav-links a:hover { text-decoration: underline; }
-  .cart { cursor: pointer; position: relative; }
-  .cart-count { background: red; color: white; border-radius: 50%; padding: 2px 8px; font-size: 12px; position: absolute; top: -8px; right: -8px; }
-  .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-  .product { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); text-align: center; }
-  .product img { max-width: 100%; border-radius: 8px; }
-  .product h3 { font-size: 18px; margin: 10px 0; }
-  .product p { color: #555; margin-bottom: 10px; }
-  .product button { padding: 8px 12px; background: #333; color: white; border: none; border-radius: 4px; cursor: pointer; }
-  .product button:hover { background: #555; }
-  .cart-panel { position: fixed; top: 0; right: -320px; width: 300px; height: 100%; background: #fff; padding: 20px; box-shadow: -2px 0 5px rgba(0,0,0,0.2); transition: right 0.3s ease; overflow-y: auto; z-index: 1000; }
-  .cart-panel.open { right: 0; }
-  .close-cart { cursor: pointer; color: red; float: right; font-weight: bold; }
-  .cart-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
-  .cart-item h4 { margin: 0; font-size: 16px; }
-  .cart-item p { margin: 0; color: #666; }
-</style>
+  <!-- gtag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17033790319"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17033790319');
+  </script>
+
+  <meta charset="UTF-8" />
+  <title>Mini Mağaza</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f8f8f8; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #333; color: #fff; border-radius: 8px; margin-bottom: 20px; }
+    .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+    .nav-links a:hover { text-decoration: underline; }
+    .cart { cursor: pointer; position: relative; }
+    .cart-count { background: red; color: white; border-radius: 50%; padding: 2px 8px; font-size: 12px; position: absolute; top: -8px; right: -8px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+    .product { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); text-align: center; }
+    .product img { max-width: 100%; border-radius: 8px; }
+    .product h3 { font-size: 18px; margin: 10px 0; }
+    .product p { color: #555; margin-bottom: 10px; }
+    .product button { padding: 8px 12px; background: #333; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .product button:hover { background: #555; }
+    .cart-panel { position: fixed; top: 0; right: -320px; width: 300px; height: 100%; background: #fff; padding: 20px; box-shadow: -2px 0 5px rgba(0,0,0,0.2); transition: right 0.3s ease; overflow-y: auto; z-index: 1000; }
+    .cart-panel.open { right: 0; }
+    .close-cart { cursor: pointer; color: red; float: right; font-weight: bold; }
+    .cart-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    .cart-item h4 { margin: 0; font-size: 16px; }
+    .cart-item p { margin: 0; color: #666; }
+  </style>
 </head>
- 
 <body>
-<!-- Google Tag Manager (noscript) -->
+
+<!-- GTM noscript -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PCZRCX4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <header>
   <h1>Mini Mağaza</h1>
   <div class="nav-links">
@@ -62,86 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img src="https://via.placeholder.com/200" alt="Ürün 1">
     <h3>Ürün 1</h3>
     <p>100₺</p>
-    <button onclick="addToCart('Ürün 1', 100); 
-  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 1', price: 100 });">
-  Sepete Ekle
-</button>
+    <button onclick="addToCart('Ürün 1', 100); dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 1', price: 100 });">Sepete Ekle</button>
   </div>
   <div class="product">
     <img src="https://via.placeholder.com/200" alt="Ürün 2">
-    <h3>Ürün 2</h3>
-    <p>150₺</p>
-   <button onclick="addToCart('Ürün 2', 150); 
-  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 2', price: 150 });">
-  Sepete Ekle
-</button>
-  </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/200" alt="Ürün 3">
-    <h3>Ürün 3</h3>
-    <p>200₺</p>
-    <button onclick="addToCart('Ürün 3', 200); 
-  dataLayer.push({ event: 'add_to_cart', product_name: 'Ürün 3', price: 200 });">
-  Sepete Ekle
-</button>
-  </div>
-</div>
-
-<!-- Sepet paneli -->
-<div class="cart-panel" id="cartPanel">
-  <span class="close-cart" onclick="toggleCart()">✕</span>
-  <h2>Sepetim</h2>
-  <div id="cartItems"></div>
-  <hr />
-  <button onclick="checkout()">Satın Al</button>
-</div>
-
-<script>
-  let cart = [];
-  const cartCountElement = document.querySelector('.cart-count');
-  const cartItemsElement = document.getElementById('cartItems');
-
-  function addToCart(name, price) {
-    cart.push({ name, price });
-    updateCartUI();
-  }
-
-  function updateCartUI() {
-    cartCountElement.textContent = cart.length;
-    cartItemsElement.innerHTML = '';
-    cart.forEach((item, index) => {
-      const div = document.createElement('div');
-      div.className = 'cart-item';
-      div.innerHTML = `
-        <h4>${item.name}</h4>
-        <p>Fiyat: ${item.price}₺</p>
-        <button onclick="removeFromCart(${index})">Sil</button>
-      `;
-      cartItemsElement.appendChild(div);
-    });
-  }
-
-  function removeFromCart(index) {
-    cart.splice(index, 1);
-    updateCartUI();
-  }
-
-  function toggleCart() {
-    document.getElementById('cartPanel').classList.toggle('open');
-  }
-
-  function checkout() {
-  dataLayer.push({
-    event: 'purchase',
-    ecommerce: {
-      items: cart.map(item => ({
-        item_name: item.name,
-        price: item.price,
-        quantity: 1
-      }))
-    }
-  });
-</script>
-
-</body>
-</html>
